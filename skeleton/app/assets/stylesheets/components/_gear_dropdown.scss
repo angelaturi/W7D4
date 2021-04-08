@@ -9,7 +9,7 @@
   padding: 10px;
   border: 1px solid $light-gray;
   width: 175px;
-  top: 46px;
+  top: 35px;
   right: 0;
   border-radius: 3px;
   box-shadow: -1px 4px 6px 1px rgba(0, 0, 0, 0.09);
@@ -20,7 +20,13 @@
   display: block;
 }
 
+.gear-dropdown:hover {
+  display: block;
+}
 
+.editions li {
+  margin: 10px 5px;
+}
 
 .editions li:hover {
   background-color: $light-gray;
@@ -29,10 +35,19 @@
 
 .help li {
   color: $blue;
+  margin: 10px 5px;
 }
 
 .help li:hover{
   text-decoration: underline;
   text-decoration-color: $blue;
-
 }
+
+.dropdown-subtitle {
+  font-weight: bold;
+  font-size: 10px;
+  margin: 10px 5px;
+  text-transform: uppercase;
+}
+
+
