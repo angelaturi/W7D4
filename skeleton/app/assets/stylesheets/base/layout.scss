@@ -6,7 +6,10 @@ html {
 }
 
 body {
-	// ...
+	width: 80%;
+	margin: 0 auto;
+	font-family: $serif;
+	font-size: 12px;
 }
 
 button {
@@ -28,9 +31,9 @@ button:hover {
 	// border-color:
 }
 
-/*
-	Header Rules
-*/
+h1 {
+	
+}
 
 hr {
 	border: 0;
