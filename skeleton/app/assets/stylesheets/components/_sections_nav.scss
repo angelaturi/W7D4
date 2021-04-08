@@ -1,0 +1,24 @@
+.sections_nav {
+
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #d3d3d3;
+
+    ul.sections_list {
+        display: flex;
+        padding: 10px 0;
+    }
+
+    li {
+        margin: 0 10px;
+        font-family: $sans-serif;
+        padding: 2px 2px;
+    }
+
+    li:hover {
+        background-color: $light-gray;
+    }    
+
+
+
+}

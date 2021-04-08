@@ -27,13 +27,17 @@ button {
 }
 
 button:hover {
-	// background-color:
-	// border-color:
+	background-color: $blue;
+	border-color: $darkest_blue;
 }
 
-h1 {
+a:hover {
+		text-decoration: underline;
+	}
+
+// h1 {
 	
-}
+// }
 
 hr {
 	border: 0;

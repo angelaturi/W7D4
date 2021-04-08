@@ -24,8 +24,16 @@
 		color: $dark-gray;
 	}
 
+	a:hover {
+		text-decoration: underline;
+	}
+
 	ul {
 		display: flex;
+	}
+
+	li:first-child {
+		font-weight: bold;
 	}
 }
 
@@ -49,10 +57,6 @@
 		margin-left: 10px;
 		border-right: 1px solid $light-gray;
 	}
-
-	// li:last-child {
-	// 	border: none;
-	// }
 
 	button {
 		background: none;
@@ -78,5 +82,9 @@
 
 	strong {
 		color: green;
+	}
+
+	li:last-child {
+		border: none;
 	}
 }
