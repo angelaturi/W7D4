@@ -1,24 +1,142 @@
-// .sections-sidebar.expand {
-//     opacity: 1;
-// }
-
 .sections_sidebar {
     display: none;
-    opacity: 0;
+
+    > ul {
+        // padding: 10px 0 20px 20px;
+        // width: 100%;
+    }
+
+    li {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    li:hover {
+        background-color: $lightest-blue;
+
+    }
+
+    li.subheader {
+        font-size: smaller;
+    }
+}
+
+#sections_sidebar {
+    display: block;
+    opacity: 1;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    padding: 10px 25px;
+    font-weight: bolder;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:after, .dropdown:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 25%;
+    border-left: 5px solid $gray;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+.dropdown:after {
+    right: 2px;
+    border-left: 5px solid white;
+    z-index: 1;
+}
+
+.dropdown {
+    ul {
+        display: none;
+        position: absolute;
+        background: white;
+        z-index: 1;
+        // box-shadow: -1px 4px 6px rgba(0, 0, 0, 0.9);
+        top: -25px;
+        left: 200px;
+        padding: 10px 10px;
+        width: 200px;
+        border-radius: 3px;
+        border: 1.5px solid $light-gray;
+    }
+} 
+
+.dropdown > ul:before {
+    position: absolute;
+    display: block;
+    content: "";
+    border-top: 21px solid transparent;
+    border-bottom: 21px solid transparent;
+    border-right: 21px solid $light-gray;
+    left: -22px;
+    top: 14px;
+    width: 0;
+    height: 0;
+}
+
+.dropdown > ul:after {
+    position: absolute;
+    display: block;
+    content: "";
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid white;
+    left: -20px;
+    top: 15px;
+    width: 0;
+    height: 0;
+}
+
+.dropdown:hover > ul {
+    display: block;
+}
+
+.sidebar_list {
+    text-transform: none;
+}
+
+#subheader {
+    color: $gray;
+    text-transform: uppercase;
+
 }
 
 // .expand:active {
 //     opacity: 1;
 // }
 
-#sections_sidebar.expand {
-    opacity: 1;
-}
+// #sections_sidebar.expand {
+//     opacity: 1;
+// }
 
-#sections-sidebar-btn:hover {
+// #sections-sidebar-btn:hover {
     
-    .sections_sidebar {
-        display: block;
-        opacity: 1;
-    }
+//     .sections_sidebar {
+//         display: block;
+//         opacity: 1;
+//     }
+// }
+
+// .arrow_left {
+
+// }
+
+
+.sections_nav {
+    display: none;
+    width: 100%;
+
 }
