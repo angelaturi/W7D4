@@ -1,0 +1,24 @@
+// .sections-sidebar.expand {
+//     opacity: 1;
+// }
+
+.sections_sidebar {
+    display: none;
+    opacity: 0;
+}
+
+// .expand:active {
+//     opacity: 1;
+// }
+
+#sections_sidebar.expand {
+    opacity: 1;
+}
+
+#sections-sidebar-btn:hover {
+    
+    .sections_sidebar {
+        display: block;
+        opacity: 1;
+    }
+}
